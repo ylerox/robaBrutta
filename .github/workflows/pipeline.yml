@@ -2,7 +2,7 @@ name: "My first next pipeline"
 on:
     push:
         branches:
-            -main
+            - main
 
 #set permission of GITHUB_TOKEN per permettere al deployment di eseguire la pipeline
 permissions:
