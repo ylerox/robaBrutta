@@ -31,3 +31,9 @@ jobs:
 
             - name: Build
               run: npm run build
+
+            - name: Artifacts
+              uses: actions/upload-artifact@v2
+              with:
+                name: nuild
+                path: ./out
