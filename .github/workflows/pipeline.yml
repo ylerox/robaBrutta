@@ -35,5 +35,5 @@ jobs:
             - name: Artifacts
               uses: actions/upload-artifact@v2
               with:
-                name: nuild
+                name: build
                 path: ./out
