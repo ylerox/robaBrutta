@@ -1,7 +1,30 @@
-# name: "My first next pipeline"
-# on:
-#     push:
-#         branches:
-#             -main
+name: "My first next pipeline"
+on:
+    push:
+        branches:
+            -main
 
-# jobs: 
+#set permission of GITHUB_TOKEN per permettere al deployment di eseguire la pipeline
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+#creiamo il primo job della pipeline che sarà una build compresi tutti gli step che servono per generare la build
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+#qui attenzione all'indentazione, uses deve andare esattamente sotto name, pur sputtanando l'indentazione. se no non funziona
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                node-version: 18
+
+            - name: Install dependencies
+              run: npm install
+
+            - name: Build
+              run: npm run build

@@ -16,7 +16,7 @@
 
 .containerCard {
     display: flex;
-    width: 250px;
+    width: 300px;
     border-radius: 20px;
     margin: 10px;
     /* max-height: 150px; */
