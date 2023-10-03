@@ -12,7 +12,7 @@ permissions:
 #creiamo il primo job della pipeline che sarà una build compresi tutti gli step che servono per generare la build
 jobs:
     build:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-latest 
         steps:
 #qui attenzione all'indentazione, uses deve andare esattamente sotto name, pur sputtanando l'indentazione. se no non funziona
             - name: Checkout
