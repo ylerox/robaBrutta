@@ -1,15 +1,19 @@
 type Props = {
     id: number,
     name: string,
+    species: string,
+    status: string
 }
 
 
 export default function CharacterInfo (prop: Props) {
     return <>
-    <a href={`/characters/${prop.id}`}><p>id: {prop.id}</p></a>
-    
-    <p>{prop.name}</p>
-
+    <a href={`/characters/${prop.id}`}>
+    <div>
+    <p>specie: {prop.species}</p>
+    <p>status: {prop.status}</p>
+    </div>
+    </a>
 
     </>
 

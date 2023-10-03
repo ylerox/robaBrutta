@@ -17,21 +17,19 @@ export default function CharacterCard(props: Props) {
     return<>
 
 <div className={`${styles.containerCard}`}>
-    
+
 <img className={`${styles.imageCard}`} src={props.character.image}></img>
+<div className={`${styles.captionCard}`}>
         <a 
-        href={`/characters/${props.character.id}`}><p>id: {props.character.id}</p></a>
-        {props.character.name == "Morty Smith"? 
-        <p>Ciao {props.character.name}</p>:
-        <p>Visita dettaglio di: {props.character.name}</p>
-    }
+        href={`/characters/${props.character.id}`}>
+        <p>{props.character.name}</p>
+        <p>id: {props.character.id} </p>
+
+        </a>
     
-    <div className={`${styles.captionCard}`}>
-    <CharacterInfo id={props.character.id} name={props.character.name}/>
-    <div>
-    <p>{props.character.species}</p>
-    <p>{props.character.status}</p>
-    </div>
+    
+    <CharacterInfo id={props.character.id} name={props.character.name} species={props.character.species} status={props.character.status}/>
+
 
 
 </div>

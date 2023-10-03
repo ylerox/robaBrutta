@@ -2,6 +2,7 @@ import CharacterCard from "@/components/characters/CharacterCard"
 import { Character } from "@/types/character"
 import axios from "axios"
 import { useEffect, useState } from "react"
+import styles from "../../components/styles.module.css"
 
 export default function CharacterPage() {
 
@@ -17,11 +18,8 @@ export default function CharacterPage() {
     }, [])
     return <>
     <p>pag personaggi</p>
-    <div >
-        {isLoading && <p>Caricamento dati....</p>}
-        {/* personaggi?.map(personaggio => <CharacterCard character={personaggio}/>)*/}
-    </div>
+    <div className={`${styles.containerCards}`}>
     {personaggi.map(personaggio => <CharacterCard character={personaggio}/>)}
-    
+    </div>
     </>
 }
