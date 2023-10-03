@@ -1,0 +1,105 @@
+.textRed {
+    color: red
+}
+
+.imageCard {
+    min-width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.containerCard {
+
+    display: flex;
+    width: 400px;
+    border-radius: 20px;
+    margin: 10px;
+    max-height: 150px;
+}
+
+.containerCards {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.captionCard{
+    display: flex;
+}
+
+.captionText {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+
+.bottoncino {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.btnCompra {
+    color: #286591;
+    border: 0;
+    line-height: 1.5;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #ffc718;
+}
+
+.sezPrezzo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sezCounter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
